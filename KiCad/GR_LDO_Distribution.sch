@@ -6,8 +6,8 @@ $Descr A 11000 8500
 encoding utf-8
 Sheet 1 1
 Title "LDO Distribution "
-Date "2022-07-20"
-Rev "1"
+Date "2022-07-31"
+Rev "2"
 Comp "Gadget Reboot"
 Comment1 "https://www.youtube.com/gadgetreboot"
 Comment2 "https://github.com/GadgetReboot/LDO_Board"
@@ -401,70 +401,9 @@ F 3 "~" H 9175 750 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	8975 750  8975 800 
-Connection ~ 8975 800 
-$Comp
-L Connector_Generic:Conn_01x02 J4
-U 1 1 628B1294
-P 9400 800
-F 0 "J4" H 9400 925 50  0000 C CNN
-F 1 "Conn_01x02" H 9480 701 50  0001 L CNN
-F 2 "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical" H 9400 800 50  0001 C CNN
-F 3 "~" H 9400 800 50  0001 C CNN
-	1    9400 800 
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8975 800  9200 800 
-Wire Wire Line
-	9200 900  9100 900 
-Wire Wire Line
-	9100 900  9100 1025
-$Comp
-L power:GNDREF #PWR028
-U 1 1 628B8538
-P 9100 1025
-F 0 "#PWR028" H 9100 775 50  0001 C CNN
-F 1 "GNDREF" H 9350 750 50  0001 C CNN
-F 2 "" H 9100 1025 50  0001 C CNN
-F 3 "" H 9100 1025 50  0001 C CNN
-	1    9100 1025
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x02 J5
-U 1 1 628BB642
-P 9400 1225
-F 0 "J5" H 9400 1350 50  0000 C CNN
-F 1 "Conn_01x02" H 9480 1126 50  0001 L CNN
-F 2 "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical" H 9400 1225 50  0001 C CNN
-F 3 "~" H 9400 1225 50  0001 C CNN
-	1    9400 1225
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8975 1225 9200 1225
-Wire Wire Line
-	9200 1325 9100 1325
-Wire Wire Line
-	9100 1325 9100 1450
-$Comp
-L power:GNDREF #PWR029
-U 1 1 628BB64F
-P 9100 1450
-F 0 "#PWR029" H 9100 1200 50  0001 C CNN
-F 1 "GNDREF" H 9350 1175 50  0001 C CNN
-F 2 "" H 9100 1450 50  0001 C CNN
-F 3 "" H 9100 1450 50  0001 C CNN
-	1    9100 1450
-	-1   0    0    -1  
-$EndComp
 Wire Wire Line
 	8725 800  8975 800 
-Wire Wire Line
-	8975 1225 8975 800 
 Text Label 6350 800  0    50   ~ 0
-Vin
-Text Label 2225 3325 0    50   ~ 0
 Vin
 Wire Wire Line
 	4850 3325 5425 3325
@@ -643,10 +582,10 @@ Wire Wire Line
 	8975 2000 8975 2050
 Connection ~ 8975 2050
 $Comp
-L Connector_Generic:Conn_01x02 J6
+L Connector_Generic:Conn_01x02 J4
 U 1 1 628D9393
 P 9400 2050
-F 0 "J6" H 9400 2175 50  0000 C CNN
+F 0 "J4" H 9400 2175 50  0000 C CNN
 F 1 "Conn_01x02" H 9480 1951 50  0001 L CNN
 F 2 "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical" H 9400 2050 50  0001 C CNN
 F 3 "~" H 9400 2050 50  0001 C CNN
@@ -670,38 +609,8 @@ F 3 "" H 9100 2275 50  0001 C CNN
 	1    9100 2275
 	-1   0    0    -1  
 $EndComp
-$Comp
-L Connector_Generic:Conn_01x02 J7
-U 1 1 628D93AA
-P 9400 2475
-F 0 "J7" H 9400 2600 50  0000 C CNN
-F 1 "Conn_01x02" H 9480 2376 50  0001 L CNN
-F 2 "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical" H 9400 2475 50  0001 C CNN
-F 3 "~" H 9400 2475 50  0001 C CNN
-	1    9400 2475
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8975 2475 9200 2475
-Wire Wire Line
-	9200 2575 9100 2575
-Wire Wire Line
-	9100 2575 9100 2700
-$Comp
-L power:GNDREF #PWR031
-U 1 1 628D93B7
-P 9100 2700
-F 0 "#PWR031" H 9100 2450 50  0001 C CNN
-F 1 "GNDREF" H 9350 2425 50  0001 C CNN
-F 2 "" H 9100 2700 50  0001 C CNN
-F 3 "" H 9100 2700 50  0001 C CNN
-	1    9100 2700
-	-1   0    0    -1  
-$EndComp
 Wire Wire Line
 	8725 2050 8975 2050
-Wire Wire Line
-	8975 2475 8975 2050
 Text Label 6350 2050 0    50   ~ 0
 Vin
 $Comp
@@ -879,10 +788,10 @@ Wire Wire Line
 	8975 3275 8975 3325
 Connection ~ 8975 3325
 $Comp
-L Connector_Generic:Conn_01x02 J8
+L Connector_Generic:Conn_01x02 J5
 U 1 1 628E28D2
 P 9400 3325
-F 0 "J8" H 9400 3450 50  0000 C CNN
+F 0 "J5" H 9400 3450 50  0000 C CNN
 F 1 "Conn_01x02" H 9480 3226 50  0001 L CNN
 F 2 "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical" H 9400 3325 50  0001 C CNN
 F 3 "~" H 9400 3325 50  0001 C CNN
@@ -906,38 +815,8 @@ F 3 "" H 9100 3550 50  0001 C CNN
 	1    9100 3550
 	-1   0    0    -1  
 $EndComp
-$Comp
-L Connector_Generic:Conn_01x02 J9
-U 1 1 628E28E9
-P 9400 3750
-F 0 "J9" H 9400 3875 50  0000 C CNN
-F 1 "Conn_01x02" H 9480 3651 50  0001 L CNN
-F 2 "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical" H 9400 3750 50  0001 C CNN
-F 3 "~" H 9400 3750 50  0001 C CNN
-	1    9400 3750
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8975 3750 9200 3750
-Wire Wire Line
-	9200 3850 9100 3850
-Wire Wire Line
-	9100 3850 9100 3975
-$Comp
-L power:GNDREF #PWR033
-U 1 1 628E28F6
-P 9100 3975
-F 0 "#PWR033" H 9100 3725 50  0001 C CNN
-F 1 "GNDREF" H 9350 3700 50  0001 C CNN
-F 2 "" H 9100 3975 50  0001 C CNN
-F 3 "" H 9100 3975 50  0001 C CNN
-	1    9100 3975
-	-1   0    0    -1  
-$EndComp
 Wire Wire Line
 	8725 3325 8975 3325
-Wire Wire Line
-	8975 3750 8975 3325
 Text Label 6350 3325 0    50   ~ 0
 Vin
 $Comp
@@ -1115,10 +994,10 @@ Wire Wire Line
 	8975 4525 8975 4575
 Connection ~ 8975 4575
 $Comp
-L Connector_Generic:Conn_01x02 J10
+L Connector_Generic:Conn_01x02 J6
 U 1 1 628E2994
 P 9400 4575
-F 0 "J10" H 9400 4700 50  0000 C CNN
+F 0 "J6" H 9400 4700 50  0000 C CNN
 F 1 "Conn_01x02" H 9480 4476 50  0001 L CNN
 F 2 "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical" H 9400 4575 50  0001 C CNN
 F 3 "~" H 9400 4575 50  0001 C CNN
@@ -1142,38 +1021,8 @@ F 3 "" H 9100 4800 50  0001 C CNN
 	1    9100 4800
 	-1   0    0    -1  
 $EndComp
-$Comp
-L Connector_Generic:Conn_01x02 J11
-U 1 1 628E29AB
-P 9400 5000
-F 0 "J11" H 9400 5125 50  0000 C CNN
-F 1 "Conn_01x02" H 9480 4901 50  0001 L CNN
-F 2 "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical" H 9400 5000 50  0001 C CNN
-F 3 "~" H 9400 5000 50  0001 C CNN
-	1    9400 5000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8975 5000 9200 5000
-Wire Wire Line
-	9200 5100 9100 5100
-Wire Wire Line
-	9100 5100 9100 5225
-$Comp
-L power:GNDREF #PWR035
-U 1 1 628E29B8
-P 9100 5225
-F 0 "#PWR035" H 9100 4975 50  0001 C CNN
-F 1 "GNDREF" H 9350 4950 50  0001 C CNN
-F 2 "" H 9100 5225 50  0001 C CNN
-F 3 "" H 9100 5225 50  0001 C CNN
-	1    9100 5225
-	-1   0    0    -1  
-$EndComp
 Wire Wire Line
 	8725 4575 8975 4575
-Wire Wire Line
-	8975 5000 8975 4575
 Text Label 6350 4575 0    50   ~ 0
 Vin
 $Comp
@@ -1351,10 +1200,10 @@ Wire Wire Line
 	8975 5800 8975 5850
 Connection ~ 8975 5850
 $Comp
-L Connector_Generic:Conn_01x02 J12
+L Connector_Generic:Conn_01x02 J7
 U 1 1 62952BF4
 P 9400 5850
-F 0 "J12" H 9400 5975 50  0000 C CNN
+F 0 "J7" H 9400 5975 50  0000 C CNN
 F 1 "Conn_01x02" H 9480 5751 50  0001 L CNN
 F 2 "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical" H 9400 5850 50  0001 C CNN
 F 3 "~" H 9400 5850 50  0001 C CNN
@@ -1378,38 +1227,8 @@ F 3 "" H 9100 6075 50  0001 C CNN
 	1    9100 6075
 	-1   0    0    -1  
 $EndComp
-$Comp
-L Connector_Generic:Conn_01x02 J13
-U 1 1 62952C0B
-P 9400 6275
-F 0 "J13" H 9400 6400 50  0000 C CNN
-F 1 "Conn_01x02" H 9480 6176 50  0001 L CNN
-F 2 "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical" H 9400 6275 50  0001 C CNN
-F 3 "~" H 9400 6275 50  0001 C CNN
-	1    9400 6275
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8975 6275 9200 6275
-Wire Wire Line
-	9200 6375 9100 6375
-Wire Wire Line
-	9100 6375 9100 6500
-$Comp
-L power:GNDREF #PWR037
-U 1 1 62952C18
-P 9100 6500
-F 0 "#PWR037" H 9100 6250 50  0001 C CNN
-F 1 "GNDREF" H 9350 6225 50  0001 C CNN
-F 2 "" H 9100 6500 50  0001 C CNN
-F 3 "" H 9100 6500 50  0001 C CNN
-	1    9100 6500
-	-1   0    0    -1  
-$EndComp
 Wire Wire Line
 	8725 5850 8975 5850
-Wire Wire Line
-	8975 6275 8975 5850
 Text Label 6350 5850 0    50   ~ 0
 Vin
 $Comp
@@ -1473,10 +1292,6 @@ Wire Wire Line
 Wire Wire Line
 	1500 900  1500 975 
 Wire Wire Line
-	1325 800  2100 800 
-Wire Wire Line
-	2100 800  2100 3325
-Wire Wire Line
 	2100 3325 2675 3325
 Text Label 1400 800  0    50   ~ 0
 Vin
@@ -1484,9 +1299,6 @@ Text Notes 975  1500 2    50   ~ 0
 I2C Bus\nInput\n
 Text Notes 950  875  2    50   ~ 0
 12V In
-Wire Wire Line
-	2100 800  6100 800 
-Connection ~ 2100 800 
 Wire Wire Line
 	6100 2050 6800 2050
 Connection ~ 6100 800 
@@ -1513,25 +1325,13 @@ Text Notes 6000 1375 2    100  ~ 0
 Motor Power
 Text Notes 5975 3375 2    50   ~ 0
 5V Out
-Text Notes 9800 900  2    50   ~ 0
-8V Out
-Text Notes 9800 1300 2    50   ~ 0
-8V Out
 Text Notes 9800 2125 2    50   ~ 0
-8V Out
-Text Notes 9800 2525 2    50   ~ 0
 8V Out
 Text Notes 9825 3425 2    50   ~ 0
 8V Out
-Text Notes 9825 3825 2    50   ~ 0
-8V Out
 Text Notes 9825 4675 2    50   ~ 0
 8V Out
-Text Notes 9825 5075 2    50   ~ 0
-8V Out
 Text Notes 9825 5950 2    50   ~ 0
-8V Out
-Text Notes 9825 6350 2    50   ~ 0
 8V Out
 $Comp
 L Mechanical:MountingHole MH1
@@ -1579,4 +1379,15 @@ F 3 "~" H 5650 7575 50  0001 C CNN
 $EndComp
 Text Notes 5200 7850 0    75   ~ 0
 Mount Holes
+Wire Wire Line
+	1325 800  6100 800 
+Wire Wire Line
+	8975 800  9300 800 
+Connection ~ 8975 800 
+Text Label 9150 800  0    50   ~ 0
+5VIn
+Text Label 2100 3325 0    50   ~ 0
+5VIn
+Text Notes 9375 825  0    75   ~ 0
+To 5V Logic LDO
 $EndSCHEMATC
